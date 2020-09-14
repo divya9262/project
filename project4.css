@@ -1,0 +1,302 @@
+:root{
+	--primmary:#3DCFD3;
+	--dark:#161616;
+	--pure:#FFFFFF;
+	--ternary:#898989;
+	--light:#F2F2F2;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+*{
+
+	padding:0;
+	margin:0;
+	
+	-webkit-font-smoothing: antialiased;
+}
+
+header{
+	background: var(--dark);
+    clip-path: polygon(0 0,100% 0,100% 100%,70% 87%,0 100%);
+}
+
+
+.container{
+	max-width: 1152px;
+	padding:15px 15px;
+	margin:0 auto;
+	
+}
+#lin{
+	color: var(--pure);
+}
+.navbar #lin:hover{
+	color: #3DCFD3 ;
+}
+nav{
+	text-transform: uppercase;
+}
+section{
+	padding: 6rem 0;
+}
+ section.about .about-me-img{
+	height: 450px;
+}
+section.about h1{
+	margin-bottom: 1rem;
+	font-size: 1.6rem;
+	font-weight: 400;
+}
+h3{
+	font-size: 1rem;
+	margin-bottom: 1rem;
+	font-weight: 300;
+
+}
+
+section.about p{
+	font-family: 'Lato', sans-serif;
+	color: var(--ternary);
+	line-height: 1.9;
+	/*margin-bottom: 2rem;*/
+}
+
+.navbar button{
+	padding:0.8rem 2rem;
+	font-size: 1rem;
+	font-weight: 600;
+	border: 2px solid transparent;
+	outline:none;
+	cursor: pointer;
+	background: #3DCFD3;
+	color: var(--secondary);
+	border-radius: 0%;
+}
+.light:hover{
+	background: var(--primmary);
+	color: var(--secondary);
+}
+.intro span,.about span,.services span,.client span {
+	color: var(--primmary);
+	font-size: 2rem;
+}
+.lot{
+	color: var(--pure);
+}
+h1{
+	font-size: 3rem;
+	font-weight: 100;
+	line-height: 1.2;
+}
+
+.light{
+	padding:0.8rem 2rem;
+	font-size: 1rem;
+	font-weight: 600;
+	border: 2px solid #FFFFFF ;
+	outline:none;
+	cursor: pointer;
+	background: var(--dark);
+	color: var(--primmary);
+}
+ section.about .social {
+      display: flex;
+      
+      justify-content: center;
+	width: 35px;
+	height: 35px;
+	
+ 
+  padding-left: 5rem;
+	
+}
+section.about .social a:hover{
+	background: var(--primmary);
+	transition: all 0.5s;
+ }
+.h5{
+ 	color: var(--ternary);
+    font-family: 'Lato', sans-serif;
+  }
+ .services{
+ 	background: var(--light);
+ }
+#inside{
+	margin-top: 3rem;
+	display:grid;
+	padding-left: 140px;
+	grid-gap: 4rem;
+	grid-column-gap: 2rem;
+	position:relative;
+
+}
+.volt{
+	position: absolute;
+	top:-3.5rem;
+	left:35%;
+}
+.card {
+	color: var(--dark);
+}
+ /*.card h6:hover{
+	color: white;
+}
+*/
+ 
+
+.card:hover{
+	background: var(--dark);
+	color: white;
+}
+.freelancer button{
+	margin-top: 5rem;
+	margin-left: 500px;
+	font-size: 1rem;
+	font-weight: 600;
+	border: 2px solid transparent;
+	outline:none;
+	cursor: pointer;
+	background: var(--primmary);
+	color: var(--secondary);
+
+}
+
+.navbar button:hover{
+	background: var(--dark);
+	color: var(--primmary);
+	border: 2px solid white;
+}
+.freelancer button:hover{
+	background: var(--dark);
+	color: var(--primmary);
+	border: 2px solid white;
+}
+section.freelancer{
+	background: var(--dark);
+	background-repeat: no-repeat;
+	background-size: cover;
+	clip-path: polygon(0 0,100% 0,100% 100%,67% 80%,0 100%);
+}
+section.freelancer h1,section.freelancer p{
+	color: var(--pure);
+}
+section.client img{
+	padding-left: 40%;
+	margin-top:3rem ;
+	margin-bottom: 2rem;
+}
+section.client footer{
+	background: var(--pure);
+}
+
+.works{
+	display: grid;
+	color: var(--secondary);
+  
+    background: var(--light);
+
+}
+section.works .image{
+	position: relative;
+	padding-left: 3px;
+
+}
+section.works .overlay{
+	position: absolute;
+	top: 0;
+	padding-left: 3px;
+	left:3px;
+	width: 99%;
+	height: 100%;
+	background: rgba(61, 207, 211,0.9);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: var(--light);
+	opacity: 0;
+	transition: all .3s ease;
+}
+section.works .image:hover .overlay{
+	opacity: 1;
+}
+
+section.works .overlay a{
+	color: var(--dark);
+	text-decoration: none;
+}
+section.works .overlay img{
+	height:100%;
+	width:100%;
+
+
+
+}
+section.works .element span{
+	color: var(--primmary);
+}
+.blog span{
+	color: var(--primmary);
+}
+.blog{
+	
+	background: var(--dark);
+color: white;
+clip-path: polygon(0 0,100% 0,100% 100%,67% 90%,0 100%);
+padding-bottom: 12rem;
+}
+section.blog .card1,section.blog .card2,section.blog .card3{
+	background: var(--pure);
+	color: var(--dark);
+}
+section.blog .blogcd{
+	padding: 25px;
+	margin-left: 95px;
+}
+section.blog .blogcd a{
+	color: var(--dark);
+
+}
+section.blog .blogcd .card1:hover,section.blog .blogcd .card3:hover,section.blog .blogcd .card2:hover{
+
+	background: var(--dark);
+	color: var(--pure);
+}
+section.blog .blogcd .card1:hover a,section.blog .blogcd .card3:hover a,section.blog .blogcd .card2:hover a{
+color: var(--pure);
+}
+
+section.contact .cont{
+	padding: 25px;
+	margin-left: 200px;
+}
+section.contact span{
+	color: var(--primmary);
+}
+section.contact form{
+	margin-top: 3rem;
+	margin-right: 5rem;
+}
+section.contact .formes{
+  margin-left: 350px;
+  padding: 45px;
+
+}
+footer {
+	background: var(--dark);
+	text-align: center;
+	padding: 3rem;
+}
+footer .social {
+      display: flex;
+      
+      justify-content: center;
+	width: 35px;
+	height: 35px;
+	
+ 
+  padding-left: 50%;
+	
+}
